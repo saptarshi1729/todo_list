@@ -15,12 +15,14 @@
     color: #333;
     margin-bottom: 20px;
 }
-.input-container{
+
+.input-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
 .todo_main {
     margin: 60px;
     max-width: 100%;
@@ -32,7 +34,8 @@
 }
 
 .todo-card {
-    width: 300px; /* Adjust the width of the cards as needed */
+    width: 300px;
+    /* Adjust the width of the cards as needed */
     padding: 20px;
     background-color: white;
     border-radius: 8px;
@@ -76,6 +79,35 @@
     height: 40px;
 }
 
+.delete-mini-button {
+    background-color: #f1930f;
+    color: #fff;
+    border: none;
+    padding: 7px 20px;
+    font-size: 14px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    height: 30px;
+}
+
+.list-item-container {
+    display: flex;
+    align-items: center;
+    /* Vertically align text and button */
+    justify-content: space-between;
+    /* Space out text and button */
+    padding: 5px 0;
+    /* Optional: Add some padding for spacing */
+}
+
+li {
+    margin-right: 10px;
+    /* Adds space between the text and the button */
+    list-style: none;
+    /* Optional: Remove bullet points if needed */
+}
+
 .delete-button-heading {
     height: 40px;
     background-color: rgb(46, 163, 46);
@@ -111,9 +143,9 @@
     transition: background-color 0.3s ease;
     margin-left: 25px;
 }
+
 .todo_inside_list {
     display: flex;
     gap: 140px;
     margin: 10px;
 }
-
